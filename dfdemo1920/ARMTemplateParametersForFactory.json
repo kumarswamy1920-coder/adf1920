@@ -8,8 +8,26 @@
 		"AzureDataLakeStorage1_accountKey": {
 			"value": ""
 		},
+		"linkedsource_accountKey": {
+			"value": ""
+		},
+		"sinklinked_password": {
+			"value": ""
+		},
 		"AzureDataLakeStorage1_properties_typeProperties_url": {
 			"value": "https://storbrowsejobs.dfs.core.windows.net/"
+		},
+		"linkedsource_properties_typeProperties_url": {
+			"value": "https://storbrowsejobs.dfs.core.windows.net/"
+		},
+		"sinklinked_properties_typeProperties_server": {
+			"value": "demobrowsejobsserver.database.windows.net"
+		},
+		"sinklinked_properties_typeProperties_database": {
+			"value": "db1920"
+		},
+		"sinklinked_properties_typeProperties_userName": {
+			"value": "admin1920"
 		}
 	}
 }

@@ -11,9 +11,33 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage1'"
 		},
+		"linkedsource_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'linkedsource'"
+		},
+		"sinklinked_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'sinklinked'"
+		},
 		"AzureDataLakeStorage1_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://storbrowsejobs.dfs.core.windows.net/"
+		},
+		"linkedsource_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://storbrowsejobs.dfs.core.windows.net/"
+		},
+		"sinklinked_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "demobrowsejobsserver.database.windows.net"
+		},
+		"sinklinked_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "db1920"
+		},
+		"sinklinked_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "admin1920"
 		},
 		"containerUri": {
 			"type": "string",
@@ -45,8 +69,26 @@
 					"AzureDataLakeStorage1_accountKey": {
 						"value": "[parameters('AzureDataLakeStorage1_accountKey')]"
 					},
+					"linkedsource_accountKey": {
+						"value": "[parameters('linkedsource_accountKey')]"
+					},
+					"sinklinked_password": {
+						"value": "[parameters('sinklinked_password')]"
+					},
 					"AzureDataLakeStorage1_properties_typeProperties_url": {
 						"value": "[parameters('AzureDataLakeStorage1_properties_typeProperties_url')]"
+					},
+					"linkedsource_properties_typeProperties_url": {
+						"value": "[parameters('linkedsource_properties_typeProperties_url')]"
+					},
+					"sinklinked_properties_typeProperties_server": {
+						"value": "[parameters('sinklinked_properties_typeProperties_server')]"
+					},
+					"sinklinked_properties_typeProperties_database": {
+						"value": "[parameters('sinklinked_properties_typeProperties_database')]"
+					},
+					"sinklinked_properties_typeProperties_userName": {
+						"value": "[parameters('sinklinked_properties_typeProperties_userName')]"
 					}
 				}
 			},
